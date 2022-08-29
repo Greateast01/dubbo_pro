@@ -1,0 +1,15 @@
+server:
+  port: 8001
+
+# 配置dubbo环境
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: zookeeper://192.168.116.133:2181
+
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.swd.service
